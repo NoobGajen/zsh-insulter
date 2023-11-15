@@ -1,5 +1,5 @@
 # zsh-insulter
-Randomly insults the user when typing wrong command.
+Randomly insults the user when they type wrong command.
 This is heavily based on [hkbakke's](https://github.com/hkbakke/bash-insulter) work.
 
 Change insults as needed :)
