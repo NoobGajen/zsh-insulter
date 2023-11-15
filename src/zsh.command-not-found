@@ -1,0 +1,71 @@
+command_not_found_handler () {
+    local INSULTS=(
+        "Don't you know anything?"
+        "Hahaha, n00b!"
+        "Wow! That was impressively wrong!"
+        "What are you doing??"
+        "Pathetic"
+        "The worst one today!"
+        "n00b alert!"
+        "Your application for reduced salary has been sent!"
+        "u suk"
+        "plz uninstall"
+        "And the Darwin Award goes to.... ${USER}!"
+        "Incompetence is also competence"
+        "Fake it till you make it!"
+        "What is this...? Amateur hour!?"
+        "Come on! You can do it!"
+        "What if... you type an actual command the next time!"
+        "What if I told you... it is possible to type valid commands."
+        "Y u no speak computer???"
+        "This is not a Window"
+        "Perhaps you should leave the command line alone..."
+        "Please step away from the keyboard!"
+        "error code: 1D10T"
+        "Pro tip: type a valid command!"
+        "Go outside."
+        "This is not a search engine."
+        "So, I'm just going to go ahead and run rm -rf / for you."
+        "Why are you so stupid?!"
+        "Perhaps computers is not for you..."
+        "Why are you doing this to me?!"
+        "Don't you have anything better to do?!"
+        "I am _seriously_ considering 'rm -rf /'-ing myself..."
+        "This is why you get to see your children only once a month."
+        "This is why nobody likes you."
+        "Are you even trying?!"
+        "My mind is going to die. I can feel it."
+        "Take a stress pill and think things over."
+        "What, what, what, what, what, what, what, what, what, what?"
+        "Hold it up to the light --- not a brain in sight!"
+        "There's a lot of it about, you know."
+        "Speak English you fool --- there are no subtitles in this scene."
+        "I think ... err ... I think ... I think I'll go home"
+        "And you call yourself a Hacker!!!"
+        "My pet ferret can type better than you!"
+        "Your mind just hasn't been the same since the electro-shock, has it?"
+        "Maybe if you used more than just two fingers..."
+        "BOB says:  You seem to have forgotten your brain at home, go bring it!"
+        "The more you drive -- the dumber you get."
+        "Listen, burrito ${USER}, I don't have time to listen to this trash."
+        "I've seen penguins that can type better than that."
+        "Have you considered trying to match wits with a rutabaga?"
+        "You must cut down the mightiest tree in the forest... with... a herring!"
+        "This man, he doesn't know when he's beaten! He doesn't know when he's winning, either. He has no... sort of... sensory apparatus..."
+        "I'm very sorry, I decide to not argue with 1d10t like you."
+    )
+
+    # Seed "random" generator
+    #RANDOM=$(date +%s%N)
+    #VALUE=$((${RANDOM}%2))
+
+    #if [[ ${VALUE} -lt 1 ]]; then
+    printf "$(tput bold)$(tput setaf 7)$(shuf -n 1 -e "${INSULTS[@]}")$(tput sgr0)"
+    #fi
+    #no need to echo cmd not found, as zsh will do it by self already.
+    #echo "SuperZSH: $1: command not found"
+    echo ""
+
+    # Return the exit code normally returned on invalid command
+    return 127
+}
