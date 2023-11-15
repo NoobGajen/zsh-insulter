@@ -8,17 +8,14 @@ command_not_found_handler () {
         "The worst one today!"
         "n00b alert!"
         "Your application for reduced salary has been sent!"
-        "lol"
         "u suk"
         "lol... plz"
         "plz uninstall"
         "And the Darwin Award goes to.... ${USER}!"
         "Incompetence is also a form of competence"
-        "Bad."
         "Fake it till you make it!"
         "What is this...? Amateur hour!?"
         "Come on! You can do it!"
-        "Nice try."
         "What if... you type an actual command the next time!"
         "What if I told you... it is possible to type valid commands."
         "Y u no speak computer???"
@@ -74,7 +71,6 @@ command_not_found_handler () {
         "Have you considered trying to match wits with a rutabaga?"
         "You must cut down the mightiest tree in the forest... with... a herring!"
         "This man, he doesn't know when he's beaten! He doesn't know when he's winning, either. He has no... sort of... sensory apparatus..."
-        "I'm very sorry, I decide to not argue with 1d10t like you."
     )
 
     # Seed "random" generator
